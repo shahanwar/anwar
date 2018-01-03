@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="It help us to find the updated bikes and popular bikes in Ducati"/>
+	<meta name="keywords" content="Bikes, equipments, news, updates"/>
+	<title>Ducati project</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="outerring">
+			<div id="logo">
+				<a href="#"><img src="images/dclogo.png" alt="logo"></a>
+			</div>
+			<a href="#"><i class="fa fa-facebook social_icons" aria-hidden="true" style=" right:200px; font-size:30px;"></i></a>
+			<a href="#"><i class="fa fa-instagram social_icons " aria-hidden="true" style=" right:250px;font-size:30px"></i></a>
+			<a href="#"><i class="fa fa-pinterest social_icons" aria-hidden="true" style="right:315px;font-size:30px"></i></a>
+			<a href="#"><i class="fa fa-twitter social_icons" aria-hidden="true" style=" right:375px;font-size:30px"></i></a>
+			<img class="mySlides" src="./images/back1.jpg" style="width:100%">
+			<img class="mySlides" src="./images/back2.jpg" style="width:100%">
+			<img class="mySlides" src="./images/back3.jpg" style="width:100%">
+			<img class="mySlides" src="./images/back4.jpg" style="width:100%">
+		</div>
+	</header>
+	<div id="nav" class="outerring">
+		<ul class="middle">
+			<div id="clickon">
+				<li onClick="showbike()">Bikes</li>
+				<li onClick="showequi()">Equipment</li>
+				<li onClick="showexpo()">Experince</li>
+				<li onClick="showds ()">Deals and services</li>
+				<li onClick="showcom ()">Company</li>
+			</div>
+		</ul>
+	</div>
+	<div class="outerring" style="background-color: #000000; display:none;" id="bikenav" >
+		<div class="middle">
+			<div class="nav_inner_nav_div" style="">
+				<h1 class="nav_inner_nav_h1" style="">Diavel</h1>
+				<p class="nav_inner_nav_p" style="">XDiavel</p>
+				<p class="nav_inner_nav_p" style="">XDiavel S</p>
+			</div>
+			<div class="nav_inner_nav_div" style="">
+				<h1 class="nav_inner_nav_h1" style="">Hypermotard</h1>
+				<p class="nav_inner_nav_p" style="">Hypermotard 939</p>
+				<p class="nav_inner_nav_p" style="">Hyperstrada 939</p>
+			</div>
+			<div class="nav_inner_nav_div" style="">
+				<h1 class="nav_inner_nav_h1" style="">Monster</h1>
+				<p class="nav_inner_nav_p" style="">797</p>
+				<p class="nav_inner_nav_p" style="">1200</p>
+				<p class="nav_inner_nav_p" style="">1200 S</p>
+			</div>
+			<div class="nav_inner_nav_div" style="">
+				<h1 class="nav_inner_nav_h1" style="">Multistrada</h1>
+				<p class="nav_inner_nav_p" style="">950</p>
+				<p class="nav_inner_nav_p" style="">1200</p>
+				<p class="nav_inner_nav_p" style="">1200 S</p>
+				<p class="nav_inner_nav_p" style="">1200 Pikes Peak</p>
+				<p class="nav_inner_nav_p" style="">1200 Enduro</p>
+			</div>
+			<div class="nav_inner_nav_div" style="">
+				<h1 class="nav_inner_nav_h1" style="">Superbike</h1>
+				<p class="nav_inner_nav_p" style="">959 Panigale</p>
+				<p class="nav_inner_nav_p" style="">NEW - 1299 Panigale </p>
+				<p class="nav_inner_nav_p" style="">R Final Edition </p>
+			</div>
+		</div>
+	</div>
+	<div class="outerring" style="background-color: #000000; display:none;" id="equinav" >
+		<div class="middle">
+			<div class="nav_inner_nav_div" style="float:left; margin-left:446px;">
+				<h1 class="nav_inner_nav_h1" style="">Accessories</h1>
+				<p class="nav_inner_nav_p" style="">Diavel</p>
+				<p class="nav_inner_nav_p" style="">Hypermotard</p>
+				<p class="nav_inner_nav_p" style="">Monster</p>
+				<p class="nav_inner_nav_p" style="">Multistrada</p>
+				<p class="nav_inner_nav_p" style="">Superbikes</p>
+				<p class="nav_inner_nav_p" style="">configuration</p>
+			</div>
+			<div class="nav_inner_nav_div" style="">
+				<h1 class="nav_inner_nav_h1" style="">Apparel</h1>
+				<p class="nav_inner_nav_p" style="">Men</p>
+				<p class="nav_inner_nav_p" style="">Women</p>
+				<p class="nav_inner_nav_p" style="">Kids</p>
+				<p class="nav_inner_nav_p" style="">Safety gear</p>
+			</div>
+		</div>
+	</div>
+	<div class="outerring" style="background-color: #000000; display:none;" id="exponav" >
+		<div class="middle">
+			<div class="nav_inner_nav_div" style=" float:left; margin-left:601px;">
+				<h1 class="nav_inner_nav_h1" style="">Live Ducati</h1>
+				<p class="nav_inner_nav_p" style="">Events in the world</p>
+				<p class="nav_inner_nav_p" style="">Ducati Grand Stands</p>
+				<p class="nav_inner_nav_p" style="">Ducati Travel</p>
+				<p class="nav_inner_nav_p" style="">Duacti Riding Experience</p>
+				<p class="nav_inner_nav_p" style="">Desmo Owner Culb</p>
+				<p class="nav_inner_nav_p" style="">World Ducati Week</p>
+			</div>
+			<div class="nav_inner_nav_div" style="">
+				<h1 class="nav_inner_nav_h1" style="">DucatiSocials</h1>
+				<p class="nav_inner_nav_p" style="">Ducati Facebook page</p>
+				<p class="nav_inner_nav_p" style="">Youtube official channel</p>
+				<p class="nav_inner_nav_p" style="">Twitter Ducati</p>
+				<p class="nav_inner_nav_p" style="">Instagram Ducati</p>
+				<p class="nav_inner_nav_p" style="">Ducati Live</p>
+			</div>
+		</div>
+	</div>
+	<div class="outerring" style="background-color: #000000; display:none;" id="dsnav" >
+		<div class="middle">
+			<div class="nav_inner_nav_div" style=" float:left; margin-left:745px;">
+				<h1 class="nav_inner_nav_h1" style="">Dealer Network</h1>
+				<p class="nav_inner_nav_p" style="">Dealer Locator</p>
+				<p class="nav_inner_nav_p" style="">DCS- Only Dealers</p>
+			</div>
+			<div class="nav_inner_nav_div" style="">
+				<h1 class="nav_inner_nav_h1" style="">Services</h1>
+				<p class="nav_inner_nav_p" style="">Maintainance</p>
+				<p class="nav_inner_nav_p" style="">Warrangty</p>
+			</div>
+		</div>
+	</div>
+	<div class="outerring" style="background-color: #000000; display:none;" id="comnav" >
+		<div class="middle">
+			<div class="nav_inner_nav_div" style=" float:left; margin-left:800px;">
+				<h1 class="nav_inner_nav_h1" style="">Who we are</h1>
+				<p class="nav_inner_nav_p" style="">Contact us</p>
+				<p class="nav_inner_nav_p" style="">Visit Ducati</p>
+			</div>
+			<div class="nav_inner_nav_div" style="">
+				<h1 class="nav_inner_nav_h1" style="">Patners</h1>
+				<p class="nav_inner_nav_p" style="">Licening</p>
+				<p class="nav_inner_nav_p" style="">Offcial Suppliers</p>
+			</div>
+		</div>
+	</div>
+	<div class="outerring " style="background-color:#141212;">
+		<div class="middle">
+			<div id="bikes_">
+				<img src="images/D1.jpg" alt="d1" style=" margin-left:63px; margin-top:40px; margin-bottom:30px;">
+				<img src="./images/d2.jpg" alt="d2" style="float:right; margin-right:50px; margin-top:40px;">
+				<h1><a href="#">UP COMING BIKES</a></h1>
+				<h2><a href="#">POPULAR BIKES</a></h2>
+			</div>
+		</div>
+	</div>
+	<div class="outerring">
+		<div class="middle">
+			<div id="gal">
+				<a href="#"><img src="./images/duca1.jpg" alt="duca" class="gallery"></a>
+				<a href="#"><img src="./images/duca2.jpg" alt="duca" class="gallery"></a>
+				<a href="#"><img src="./images/duca3.jpg" alt="duca" class="gallery"></a>
+				<a href="#"><img src="./images/duca4.jpg" alt="duca" class="gallery"></a>
+				<a href="#"><img src="./images/duca5.jpg" alt="duca" class="gallery"></a>
+				<a href="#"><img src="./images/duca6.jpg" alt="duca" class="gallery"></a>
+			</div>
+		</div>
+	</div>
+	<div class="outerring" style="background-color:#141212;">
+		<div class="middle">
+			<div id="abt">
+				<h1><a href="#">About</a></h1>
+				<h2>Ducati summary</h2>
+				<p>Founded in 1926 Ducati has been producing sport inspired motorcycles since
+					1946 Today their motorcycles are characterised by performance engines with
+					Desmodromic valve actuation innovative design and avant garde technlogy
+					Covering several market segments Ducati s range of motorcycles is divided
+					into model families which include Diavel Hypermotard Monster Multistrada
+					Scrambler Streetfighter and Superbike  Read more
+				</p>
+				<img src="./images/abt.jpg" alt="abtout">
+			</div>
+		</div>
+	</div>
+	<div class="outerring ">
+		<div class="middle" style="">
+			<div id="nws">
+				<h1><a href="#">News</a></h1>
+				<img src="./images/news.jpg" alt="news">
+				<h2>Ducati 1299 Panigale R Final Edition launched in India<br>
+					at Rs 59.18 lakhs
+				</h2>
+				<p>Less than a week after it was globally unveiled the Ducati 1299 Panigale R
+					Final Edition has been launched in India at Rs 59 18 lakhs ex showroom Delhi
+					Marking the end of the V twin era for the litre class superbike the 1299 Panigale
+					R Final Edition can be booked
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="outerring " style="background-color:#141212;">
+		<div class="middle">
+			<div  id="tool_hd">
+				<h1>Bikes</h1>
+				<div id="tool_p">
+					<p><a href="#">Configurator</a></p>
+					<p><a href="#">Ducati videos</a></p>
+					<p><a href="#">Compare bikes</a></p>
+					<p><a href="#">Model archieve</a></p>
+				</div>
+			</div>
+			<div id="tool_hd_1">
+				<h1>Equipment</h1>
+				<div id="tool_p_1">
+					<p><a href="#">Accessories</a></p>
+					<p><a href="#">Apparel</a></p>
+					<p><a href="#">Online shop</a></p>
+					<p><a href="#">special</a></p>
+					<p><a href="#">Redline magazine</a></p>
+				</div>
+			</div>
+			<div id="tool_hd_2">
+				<h1> Ask information</h1>
+				<div id="tool_p_2">
+					<p><a href="#">Customer service</a></p>
+					<p><a href="#">Find a dealer</a></p>
+					<p><a href="#">Contact a dealer</a></p>
+					<p><a href="#">Register</a></p>
+				</div>
+			</div>
+			<div id="tool_hd_3">
+				<h1>Experience</h1>
+				<div id="tool_p_3">
+					<p><a href="#">Events</a></p>
+					<p><a href="#">Ducati riding</a></p>
+					<p><a href="#">Ducati travel</a></p>
+					<p><a href="#">Ducati Grandstands</a></p>
+					<p><a href="#">World Ducati week</a></p>
+				</div>
+			</div>
+			<div id="tool_hd_4">
+				<h1>Comapny</h1>
+				<div id="tool_p_4">
+					<p><a href="#">Who we are</a></p>
+					<p><a href="#">History</a></p>
+					<p><a href="#">Online shop</a></p>
+					<p><a href="#">Visit ducati</a></p>
+					<p><a href="#">News</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="outerring">
+			<div class="middle">
+				<div id="foot">
+					<h3>Terms of use</h3>
+					<p>Copyright @ 2017 Ducati Motor Holding. -A Company subjects to the managment and Coordination
+						activities of AUDI AG.All rights reserved
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}
+		x[myIndex-1].style.display = "block";
+		setTimeout(carousel, 4000); // Change image every 2 seconds
+	}
+
+	function showbike(){
+
+		var x = document.getElementById("bikenav");
+		var y = document.getElementById("equinav");
+		var z = document.getElementById("exponav");
+		var p = document.getElementById("dsnav");
+		var q = document.getElementById("comnav");
+		if(x.style.display=="none")
+		{
+			x.style.display="block";
+			y.style.display = "none";
+			z.style.display = "none";
+			p.style.display = "none";
+			q.style.display = "none";
+		}
+		else
+		{
+			x.style.display="none";
+		}
+
+	}
+	function showequi(){
+
+		var x = document.getElementById("equinav");
+		var y = document.getElementById("bikenav");
+		var z = document.getElementById("exponav");
+		var p = document.getElementById("dsnav");
+		var q = document.getElementById("comnav");
+		if(x.style.display=="none")
+		{
+			x.style.display="block";
+			y.style.display = "none";
+			z.style.display = "none";
+			p.style.display = "none";
+			q.style.display = "none";
+		}
+		else
+		{
+			x.style.display="none";
+		}
+	}
+	function showexpo(){
+
+		var x = document.getElementById("exponav");
+		var y = document.getElementById("bikenav");
+		var z = document.getElementById("equinav");
+		var p = document.getElementById("dsnav");
+		var q = document.getElementById("comnav");
+		if(x.style.display=="none")
+		{
+			x.style.display="block";
+			y.style.display = "none";
+			z.style.display = "none";
+			p.style.display = "none";
+			q.style.display = "none";
+		}
+		else
+		{
+			x.style.display="none";
+		}
+	}
+	function showds(){
+
+		var x = document.getElementById("dsnav");
+		var y = document.getElementById("bikenav");
+		var z = document.getElementById("equinav");
+		var p = document.getElementById("exponav");
+		var q = document.getElementById("comnav");
+		if(x.style.display=="none")
+		{
+			x.style.display="block";
+			y.style.display = "none";
+			z.style.display = "none";
+			p.style.display = "none";
+			q.style.display = "none";
+		}
+		else
+		{
+			x.style.display="none";
+		}
+	}
+	function showcom(){
+
+		var x = document.getElementById("comnav");
+		var y = document.getElementById("bikenav");
+		var z = document.getElementById("equinav");
+		var p = document.getElementById("exponav");
+		var q = document.getElementById("dsnav");
+		if(x.style.display=="none")
+		{
+			x.style.display="block";
+			y.style.display = "none";
+			z.style.display = "none";
+			p.style.display = "none";
+			q.style.display = "none";
+		}
+		else
+		{
+			x.style.display="none";
+		}
+	}
+</script>
+</body>
+</html>
